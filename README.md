@@ -2,6 +2,7 @@
 
 Version 1.2
 
+
 Changelog:-
 
 First public release
@@ -12,7 +13,7 @@ This bash script is designed to simplify the creation of compatible LUKS contain
 
 # SYSTEM REQUIREMENTS
 
-Only requirements are systems with hardware to support encryption and decryption, cryptsetup and associated packages, and debian-based environment (ubuntu, mint, popOS etc.)
+The only requirements are systems with hardware to support modern encryption and decryption, cryptsetup and associated packages, and running in a debian-based environment (ubuntu, mint, popOS, debian etc.)
 
 # INSTALLATION
 
