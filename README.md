@@ -18,6 +18,7 @@ The only requirements are systems with hardware to support modern encryption and
 # INSTALLATION
 
 Make executable and run:
+
 ./luks-container-autosetup-script-v1.2.sh
 
 # DISCLAIMER
