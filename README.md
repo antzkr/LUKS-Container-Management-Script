@@ -14,7 +14,8 @@ The only requirements are systems with hardware to support modern encryption and
 
 Make executable and run:
 
-    ./luks-container-autosetup-script-v1.2.sh
+    chmod +x /luks-container-autosetup-script-v1.x.sh
+    ./luks-container-autosetup-script-v1.x.sh
 
 # DISCLAIMER
 Please review this bash script carefully. NEVER run a script blindly without understanding what it could do. Don't trust me. Google around to find out more. Please research, research, research.
