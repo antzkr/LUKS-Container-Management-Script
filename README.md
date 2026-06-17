@@ -17,7 +17,12 @@ Make executable and run:
     chmod +x /luks-container-autosetup-script-v1.x.sh
     ./luks-container-autosetup-script-v1.x.sh
 
+
 Note: DD is used to create the initial binary image. DD builds with base-10 numbers. Final container size will be smaller when measured in GB. So creating a 1000 MB container will actually result in a final size of 0.97 GB (eg. 1 GB = 1024 MB). Take this into consideration when creating the image size.
+
+
+# SCREENSHOTS
+
 
 # DISCLAIMER
 Please review this bash script carefully. NEVER run a script blindly without understanding what it could do. Don't trust me. Google around to find out more. Please research, research, research.
