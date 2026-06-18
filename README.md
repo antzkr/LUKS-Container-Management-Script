@@ -25,7 +25,8 @@ Note: DD is used to create the initial binary image. DD builds with base-10 numb
 
 ![First screen](Screenshot-1.png)
 ![Second screen](Screenshot-2.png)
-![Third screen](Screenshot-3.png) 
+![Third screen](Screenshot-3.png)
+![Forth screen](Screenshot-4.png)
 
 # DISCLAIMER
 Please review this bash script carefully. NEVER run a script blindly without understanding what it could do. Don't trust me. Google around to find out more. Please research, research, research.
