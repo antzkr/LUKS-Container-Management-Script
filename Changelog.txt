@@ -48,5 +48,4 @@ v2.0
 Colorized menus, added option to shrink or expand existing container, visual tweaks.
 
 v1.2
-
 Public release. Cleanup on exit trap, validation checks, required packaged installed check.
