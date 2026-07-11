@@ -23,11 +23,11 @@ Make executable and run:
 
 # IMPORTANT INFORMATION
 
-Binary images uses base-10 numbers. Final container size will be smaller when measured in GB. So creating a 1000 MB container will actually result in a final size of 0.97 GB (eg. 1 GB = 1024 MB). Take this into consideration when creating the target image size.
+1. Binary images uses base-10 numbers. Final container size will be smaller when measured in GB. So creating a 1000 MB container will actually result in a final size of 0.97 GB (eg. 1 GB = 1024 MB). Take this into consideration when creating the target image size.
 
-Resizing LUKS containers is inherently risky. Especially when truncating. ALWAYS create a backup before proceeding with any changes! A guide for shrinking to minimum sizes is provided, with conservative, moderate and risky size options displayed. Please remember that they are only a guide and data corruption is likely when containers are truncated below the filesystem and close to the underlying existing data. And don't forget that filesystem fragmentation may require more space.
+2. Resizing LUKS containers is inherently risky. Especially when truncating. ALWAYS create a backup before proceeding with any changes! A guide for shrinking to minimum sizes is provided, with conservative, moderate and risky size options displayed. Please remember that they are only a guide and data corruption is likely when containers are truncated below the filesystem and close to the underlying existing data. And don't forget that filesystem fragmentation may require more space.
 
-Keyfiles can be used in addition to or as a replacement of existing keys in the container. Remember that they act just like physical keys so be extra careful about storing them in the most secure way possible. Highly recommended to keep keyfiles completely offline (eg. deattached usb drive) and ideally create LUKS containers on a system running a LiveCD/USB OS.
+3. Keyfiles can be used in addition to or as a replacement of existing keys in the container. Remember that they act just like physical keys so be extra careful about storing them in the most secure way possible. Highly recommended to keep keyfiles completely offline (eg. deattached usb drive) and ideally create LUKS containers on a system running a LiveCD/USB OS.
 
 
 # LUKS Default Parameters:
