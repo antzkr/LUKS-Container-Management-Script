@@ -1,10 +1,12 @@
-LUKS Container Autosetup Script
+LUKS Container Management Script
 Changelog:~
 
 
-v4.1: Redesigned shrinking size calculations, clearer shrinking guide, updated container info function.
+v4.1
+Redesigned shrinking size calculations, clearer shrinking guide, updated container info function.
 
-v4.0: Changed broken size calculations, changed selection prompt from shrinking container size to filesystem size
+v4.0
+Changed broken size calculations, changed selection prompt from shrinking container size to filesystem size
 
 v3.9
 Improved shrink minimum size calculation - uses filesystem size + LUKS overhead + safety buffer instead of just data content size; added detailed size analysis display before shrink; better protection against accidental data loss
