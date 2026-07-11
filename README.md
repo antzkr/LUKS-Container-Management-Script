@@ -8,7 +8,7 @@ This bash script is designed to simplify the creation and management of compatib
 
 So why use LUKS, when other well-supported file encryption software is available (like gpg, veracrypt)? Because it's a known, reliable, flexible, secure encryption standard with strong defaults. No need to worry about selecting 'The Best™️' encryption settings. Just create and forget about it. Plus multiple keys (and keyfiles) can be used. Of course, the single most important security factor is the strength of the password so USE A STRONG PASSWORD!
 
-Only LUKS file containers / images are created by this script. Block devices (partitions) are NOT supported. Script works with multiple LUKS file containers.
+Only LUKS file containers / images are created by this script. Block devices (partitions) are **NOT supported**. Script works with multiple LUKS file containers.
 
 # SYSTEM REQUIREMENTS
 
@@ -25,7 +25,7 @@ Make executable and run:
 
 1. Binary images uses base-10 numbers. Final container size will be smaller when measured in GB. So creating a 1000 MB container will actually result in a final size of 0.97 GB (eg. 1 GB = 1024 MB). Take this into consideration when creating the target image size.
 
-2. Resizing LUKS containers is inherently risky. Especially when truncating. ALWAYS create a backup before proceeding with any changes! A guide for shrinking to minimum sizes is provided, with conservative, moderate and risky size options displayed. Please remember that they are only a guide and data corruption is likely when containers are truncated below the filesystem and close to the underlying existing data. And don't forget that filesystem fragmentation may require more space.
+2. Resizing LUKS containers is inherently risky. Especially when truncating. **ALWAYS create a backup before proceeding with any changes!** A guide for shrinking to minimum sizes is provided, with conservative, moderate and risky size options displayed. Please remember that they are only a guide and data corruption is likely when containers are truncated below the filesystem and close to the underlying existing data. And don't forget that filesystem fragmentation may require more space.
 
 3. Keyfiles can be used in addition to or as a replacement of existing keys in the container. Remember that they act just like physical keys so be extra careful about storing them in the most secure way possible. Highly recommended to keep keyfiles completely offline (eg. deattached usb drive) and ideally create LUKS containers on a system running on a LiveCD/USB OS.
 
