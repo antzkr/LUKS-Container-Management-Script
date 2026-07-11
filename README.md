@@ -27,7 +27,7 @@ Make executable and run:
 
 2. Resizing LUKS containers is inherently risky. Especially when truncating. **ALWAYS create a backup before proceeding with any changes!** A guide for shrinking to minimum sizes provides suggestions such as conservative, moderate and risky. Please remember that they are only a guide and data corruption is likely when containers are truncated below the filesystem and close to the underlying existing data. And don't forget that filesystem fragmentation may require more space.
 
-3. Keyfiles can be used in addition to or as a replacement of existing keys in the container. Remember that they act just like physical keys so be extra careful about storing them in the most secure way possible. Highly recommended to keep keyfiles completely offline (eg. deattached usb drive) and ideally create LUKS containers on a system running on a LiveCD/USB OS.
+3. Keyfiles can be used in addition to or as a replacement of existing keys in the container. Remember that they act just like physical keys so be extra careful about storing them in a secure way. It is highly recommended to keep keyfiles completely offline (eg. deattached usb drive) and ideally create LUKS containers on a system running on a LiveCD/USB OS.
 
 
 # LUKS Default Parameters:
