@@ -53,6 +53,7 @@ These default settings are completely fine for most users. As already mentioned,
 ![Second screen](Screenshot-2.png)
 ![Third screen](Screenshot-3.png)
 ![Forth screen](Screenshot-4.png)
+![Fifth screen](Screenshot-5.png)
 
 # DISCLAIMER
 Please review this bash script carefully. NEVER run a script blindly without understanding what it could do. Don't trust me. Google around to find out more. Please research, research, research.
