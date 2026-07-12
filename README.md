@@ -6,9 +6,9 @@ Version 4.1
 
 This bash script is designed to simplify the creation and management of compatible LUKS containers via cryptsetup. Setting up encrypted images was always a cumbersome process with lots of typing, so this scripts aims to make it easier for the user especially in terminal-only environments. There are many github scripts available for LUKS encrypted partitions but hardly any for encrypted images, hence this script was created.
 
-So why use LUKS, when other well-supported file encryption software is available (like gpg, veracrypt)? Because it's a known, reliable, flexible, secure encryption standard with strong defaults. No need to worry about selecting 'The Best™️' encryption settings. Just create and forget about it. Plus multiple keys (and keyfiles) can be used. Of course, the single most important security factor is the strength of the password so USE A STRONG PASSWORD!
+So why use LUKS, when other well-supported file encryption software is available (like gpg or veracrypt)? Because it's a known, reliable, flexible, secure encryption standard with strong defaults. No need to worry about selecting 'The Best™️' encryption settings. Just create and forget about it. Plus multiple keys (and keyfiles) can be used. Of course, the single most important security factor is the strength of the password so USE A STRONG PASSWORD!
 
-Only LUKS file containers / images are created by this script. Block devices (partitions) are **NOT supported**. Script works with multiple LUKS file containers.
+Only LUKS file containers / images are created by this script. Block devices (partitions) are **NOT supported**. This script works with multiple LUKS file containers.
 
 # SYSTEM REQUIREMENTS
 
