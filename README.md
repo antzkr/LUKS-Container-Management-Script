@@ -10,7 +10,7 @@ Setting up encrypted images was always a cumbersome process with lots of typing 
 
 So why use LUKS, when other well-supported file encryption software is available (like gpg or veracrypt)? Because it's a known, reliable, flexible, secure encryption standard with strong defaults. No need to worry about selecting 'The Best™️' encryption settings. Just create and forget about it. Plus multiple keys (and keyfiles) can be used.
 
-Of course, the single most important security factor is the strength of the password so USE A STRONG PASSWORD!
+Of course, the single most important security factor is the strength of the password so **USE A STRONG PASSWORD!**
 
 Only LUKS file containers / images are created. Block devices (partitions) are **NOT supported**. This script works with multiple LUKS file containers.
 
