@@ -39,7 +39,7 @@ Make executable and run:
 
 
 # LUKS Default Parameters:
-These default settings are completely fine for most users. As already mentioned, password strength is the most important security factor.
+These default settings are completely fine for most users. As already mentioned, password strength is the most important security factor. Encryption parameters only matter when the password is weak!
 - Cipher: aes-xts-plain64
 - Key Size: 512 bits
 - Header Hashing: sha256
