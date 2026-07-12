@@ -46,6 +46,7 @@ These default settings are completely fine for most users. As already mentioned,
 - Passphrase Derivation: argon2id
 - Random Number Generator: /dev/urandom 
 
+https://www.strongdm.com/blog/nist-password-guidelines
 
 # SCREENSHOTS
 
