@@ -4,9 +4,13 @@ Version 4.1
 
 # PURPOSE
 
-This bash script is designed to simplify the creation and management of compatible LUKS containers via cryptsetup. Setting up encrypted images was always a cumbersome process with lots of typing, so this scripts aims to make it easier for the user especially in terminal-only environments. There are many github scripts available for LUKS encrypted partitions but hardly any for encrypted images, hence this script was created.
+This bash script is designed to simplify the creation and management of compatible LUKS containers via cryptsetup.
 
-So why use LUKS, when other well-supported file encryption software is available (like gpg or veracrypt)? Because it's a known, reliable, flexible, secure encryption standard with strong defaults. No need to worry about selecting 'The Best™️' encryption settings. Just create and forget about it. Plus multiple keys (and keyfiles) can be used. Of course, the single most important security factor is the strength of the password so USE A STRONG PASSWORD!
+Setting up encrypted images was always a cumbersome process with lots of typing, so this scripts aims to make it easier for the user especially in terminal-only environments. There are many github scripts available for LUKS encrypted partitions but hardly any for encrypted images, hence this script was created.
+
+So why use LUKS, when other well-supported file encryption software is available (like gpg or veracrypt)? Because it's a known, reliable, flexible, secure encryption standard with strong defaults. No need to worry about selecting 'The Best™️' encryption settings. Just create and forget about it. Plus multiple keys (and keyfiles) can be used.
+
+Of course, the single most important security factor is the strength of the password so USE A STRONG PASSWORD!
 
 Only LUKS file containers / images are created by this script. Block devices (partitions) are **NOT supported**. This script works with multiple LUKS file containers.
 
@@ -25,9 +29,13 @@ Make executable and run:
 
 1. Binary images uses base-10 numbers. Final container size will be smaller when measured in GB. So creating a 1000 MB container will actually result in a final size of 0.97 GB (eg. 1 GB = 1024 MB). Take this into consideration when creating the target image size.
 
-2. Resizing LUKS containers is inherently risky. Especially when truncating. **ALWAYS create a backup before proceeding with any changes!** When shrinking a minimum size guide offers conservative, moderate and risky size suggestions. Please remember that they are only a guide and data corruption is likely when containers are truncated below the filesystem and close to the underlying existing data. And don't forget that filesystem fragmentation may require more space.
+2. Resizing LUKS containers is inherently risky. Especially when truncating.
 
-3. Keyfiles can be used in addition to (or as a replacement of) existing keys in the container. Remember that they act just like physical keys so be extra careful about storing them in a secure way. It is highly recommended to keep keyfiles completely offline (eg. deattached usb drive) and ideally create LUKS containers on a system running on a LiveCD/USB OS.
+   **ALWAYS create a backup before proceeding with any changes!**
+
+   When shrinking a minimum size guide offers conservative, moderate and risky size suggestions. Please remember that they are only a guide and data corruption is likely when containers are truncated below the filesystem and close to the underlying existing data. And don't forget that filesystem fragmentation may require more space.
+
+5. Keyfiles can be used in addition to (or as a replacement of) existing keys in the container. Remember that they act just like physical keys so be extra careful about storing them in a secure way. It is highly recommended to keep keyfiles completely offline (eg. deattached usb drive) and ideally create LUKS containers on a system running on a LiveCD/USB OS.
 
 
 # LUKS Default Parameters:
