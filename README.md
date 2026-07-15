@@ -8,7 +8,7 @@ This bash script is designed to simplify the creation and management of compatib
 
 Setting up encrypted images was always a cumbersome process with lots of typing so this scripts aims to make LUKS management easier in cli environments. There are many github scripts available for LUKS encrypted partitions but hardly any for encrypted LUKS images, hence the reason for writing this script.
 
-So why use LUKS, when other well-supported file encryption software is available? Because it's a known, reliable, flexible, secure encryption standard with strong defaults. No need to worry about selecting 'The Best™️' encryption settings. Just create and forget about it. Plus multiple keys (and keyfiles) can be used.
+So why use LUKS, when other file encryption software is available? Because it's a known, reliable, flexible, secure encryption standard with strong defaults. No need to worry about selecting 'The Best™️' encryption settings. Just create and forget about it. Plus multiple keys (and keyfiles) can be used.
 
 Of course, the single most important security factor is the strength of the password so **USE A STRONG PASSWORD!**
 
