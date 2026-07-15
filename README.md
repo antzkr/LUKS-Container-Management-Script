@@ -39,7 +39,7 @@ Make executable and run:
 
 6. Be very careful with erasing LUKS container headers. The biggest advantage of removing the header from the container is that it is IMPOSSIBLE to crack, since there is no key to brute-force. The disadvantage is without a header backup there is **NO DATA RECOVERY**, even if the password is known!
 
-**Use only if you know what you are doing and it is worth the risk of keeping a headless LUKS container!**
+   **Use only if you know what you are doing and it is worth the risk of keeping a headless LUKS container!**
 
 
 # LUKS Default Parameters:
