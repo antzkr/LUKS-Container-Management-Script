@@ -1,6 +1,6 @@
 # LUKS Container Management Script
 
-Version 4.1
+Version 4.2
 
 # PURPOSE
 
@@ -36,6 +36,10 @@ Make executable and run:
    When shrinking, a minimum size guide offers conservative, moderate and aggressive size suggestions. Please remember that these sizes are only approximations - data corruption is likely when containers are truncated below the filesystem and close to the underlying existing data. And don't forget that filesystem fragmentation may require more space.
 
 5. Keyfiles can be used in addition to (or as a replacement of) existing keys in the container. Since they act just like physical keys you need to be extra careful about storing them in a secure way. It is highly recommended to keep keyfiles completely offline (eg. a detached usb drive) and also create LUKS containers on a LiveCD/USB OS (RAM-only) for memory security.
+
+6. Be very careful with erasing LUKS container headers. The biggest advantage of removing the header from the container is that it is IMPOSSIBLE to crack, since there is no key to brute-force. The disadvantage is without a header backup there is **NO DATA RECOVERY**, even if the password is known!
+
+**Use only if you know what you are doing and it is worth the risk of keeping a headless LUKS container**
 
 
 # LUKS Default Parameters:
