@@ -37,7 +37,7 @@ Make executable and run:
 
 5. Keyfiles can be used in addition to (or as a replacement of) existing keys in the container. Since they act just like physical keys you need to be extra careful about storing them in a secure way. It is highly recommended to keep keyfiles completely offline (eg. a detached usb drive) and also create LUKS containers on a LiveCD/USB OS (RAM-only) for memory security.
 
-6. Be very careful with erasing LUKS container headers. The biggest advantage of removing the header from the container is that it is IMPOSSIBLE to crack, since there is no key to brute-force. This is ideal for users requiring anti-forensics protection. The disadvantage is without a header backup there is **NO DATA RECOVERY**, even if the password is known! Which perhaps could be useful for some users.
+6. Be very careful with erasing LUKS container headers. The biggest advantage of removing the header from the container is that it is IMPOSSIBLE to crack, since there is no key to brute-force. This is ideal for users requiring anti-forensics protection. The disadvantage is without a header backup there is **NO DATA RECOVERY**, even if the password is known! Which perhaps could be useful for some users. Consider the security implications carefully.
 
    **Use only if you know what you are doing and is worth the risk of keeping a headless LUKS container!**
 
