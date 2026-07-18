@@ -781,6 +781,7 @@ restore_luks_header() {
     if [[ -n "$backup_perms" ]] && [[ "$backup_perms" != "600" ]] && [[ "$backup_perms" != "400" ]]; then
         echo -e "\n${YELLOW}Warning:${NC} Backup file permissions are $backup_perms (expected 600 or 400)."
         echo -e "${YELLOW}This may indicate the backup was exposed to other users.${NC}"
+        echo -e "${YELLOW}Depending on your security profile, this may or may not be a problem.${NC}"
     fi
 
     # Check if it looks like a valid LUKS header
