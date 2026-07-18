@@ -2,6 +2,12 @@ LUKS Container Management Script
 Changelog:~
 
 
+v4.4
+Hardened codebase security, fixed race condition in loop device handling, replaced bc with awk, prevent last keyslot removal, visual tweaks
+
+v4.3
+Improved shrinking size calculation with dynamic values, uses resizefs to calculate minimum instead of guessing, blocked user from shrinking below minimum, improved container integrity check
+
 v4.1
 Redesigned shrinking size calculations, clearer shrinking guide, updated container info function.
 
