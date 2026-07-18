@@ -1,6 +1,6 @@
 # LUKS Container Management Script
 
-Version 4.2
+Version 4.4
 
 # PURPOSE
 
