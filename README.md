@@ -6,7 +6,7 @@ Version 4.4
 
 This bash script is designed to simplify the creation and management of compatible LUKS containers via cryptsetup.
 
-Setting up encrypted images was always a cumbersome process with lots of typing so this scripts aims to make LUKS management easier in cli environments. Manny github scripts already exist for handling LUKS encrypted partitions but there are hardly any for encrypted LUKS images, hence the reason for writing this script.
+Working with LUKS encrypted images was always a cumbersome process with lots of typing so this scripts aims to make LUKS management easier in cli environments. Manny github scripts already exist for handling LUKS encrypted partitions but there are hardly any for encrypted LUKS images, hence the reason for writing this script.
 
 So why use LUKS, when other file encryption software is available? Because it's a known, reliable, flexible, secure encryption standard with strong defaults. No need to worry about selecting 'The Best™️' encryption settings. Just create and forget about it. Plus multiple keys (and keyfiles) can be used.
 
