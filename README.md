@@ -37,7 +37,7 @@ Make executable and run:
 
    When shrinking, a minimum size guide offers size suggestions based on the filesystem (resize2fs) with practical calculations. Please remember that these are only approximations. Data corruption is possible when containers are truncated below the filesystem and close to the underlying existing data. It is also important to note that filesystem fragmentation may require more space.
 
-5. Keyfiles can be used in addition to (or as a replacement of) existing keys in the container. Since they act just like physical keys you need to be extra careful about storing them in a secure way. It is highly recommended to keep keyfiles completely offline (eg. a detached usb drive) and also create LUKS containers on a LiveCD/USB OS (RAM-only) for memory security.
+5. Keyfiles can be used in addition to (or as a replacement of) existing keys in the container. Since they act just like physical keys you need to be extra careful about storing them in a secure way. It is highly recommended to keep keyfiles completely offline (eg. a detached usb drive). Security can also be improved by create LUKS containers on a LiveCD/USB OS (RAM-only).
 
 6. Be very careful with erasing LUKS container headers. The biggest advantage of removing the header from the container is that it is IMPOSSIBLE to crack, since there is no key to brute-force. This is ideal for users requiring anti-forensics protection. The disadvantage is without a header backup there is **NO DATA RECOVERY**, even if the password is known! Consider the implications carefully.
 
