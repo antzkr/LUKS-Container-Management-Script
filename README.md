@@ -4,7 +4,7 @@ Version 4.4
 
 # PURPOSE
 
-This bash script is designed to simplify the creation and management of compatible LUKS containers via cryptsetup.
+This bash script is designed to simplify the creation and management of LUKS containers via cryptsetup.
 
 Working with LUKS encrypted images was always a cumbersome process with lots of typing so this scripts aims to make LUKS management easier in cli environments. Manny github scripts already exist for handling LUKS encrypted partitions but there are hardly any for encrypted LUKS images, hence the reason for writing this script.
 
