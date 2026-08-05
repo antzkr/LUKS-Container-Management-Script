@@ -12,7 +12,7 @@ So why use LUKS, when other file encryption software is available? Because it's 
 
 Of course, the single most important security factor is the strength of the password so **USE A STRONG PASSWORD!**
 
-Only LUKS file containers can be created (.bin files). Partitions are **NOT supported**. This script can work with multiple LUKS file containers.
+Only LUKS container files can be created (eg .bin). Partitions are **NOT supported**. This script can work with multiple LUKS file containers.
 
 # SYSTEM REQUIREMENTS
 
@@ -41,7 +41,7 @@ Make executable and run:
 
 6. Be very careful with erasing LUKS container headers. The biggest advantage of removing the header from the container is that it is IMPOSSIBLE to crack, since there is no key to brute-force. This is ideal for users requiring anti-forensics protection. The disadvantage is without a header backup there is **NO DATA RECOVERY**, even if the password is known! Consider the implications carefully.
 
-   **Use only if you know what you are doing and it is worth the risk of keeping a headless LUKS container**
+   **Use only if you know what you are doing and it is worth the risk of keeping a headless LUKS container.**
 
 
 # LUKS Default Parameters:
