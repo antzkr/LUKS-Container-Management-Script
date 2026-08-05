@@ -1283,8 +1283,8 @@ remove_keyslot() {
         echo -e "${RED}║                                                      ║${NC}"
         echo -e "${RED}║ This operation will be BLOCKED for your protection.  ║${NC}"
         echo -e "${RED}╚══════════════════════════════════════════════════════╝${NC}"
-        echo -e "\n${YELLOW}To proceed, first add another keyslot (Option 6)${NC}"
-        echo -e "${YELLOW}or add a keyfile (Option 5), then try again.${NC}\n"
+        echo -e "\n${YELLOW}To proceed, first add another keyslot (Option 8)${NC}"
+        echo -e "${YELLOW}or add a keyfile (Option 7), then try again.${NC}\n"
         return 1
     fi
 
@@ -1659,7 +1659,7 @@ while true; do
     echo -e "  ${BLUE}5)${NC} ${CYAN}Restore LUKS header${NC}"
     echo -e "  ${BLUE}6)${NC} ${CYAN}Erase LUKS header${NC}"
     echo -e "  ${BLUE}7)${NC} ${CYAN}Add keyfile to container${NC}"
-    echo -e "  ${BLUE}8)${NC} ${CYAN}Add/Change container password${NC}"
+    echo -e "  ${BLUE}8)${NC} ${CYAN}Add/Change keyslot password${NC}"
     echo -e "  ${BLUE}9)${NC} ${CYAN}Remove keyslot${NC}"
     echo -e "  ${BLUE}10)${NC} ${CYAN}Show container information${NC}"
     echo -e "  ${BLUE}11)${NC} ${BLUE}Exit${NC}\n"
