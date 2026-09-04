@@ -18,7 +18,7 @@ Only LUKS container files can be created (.bin). Partitions are **NOT supported*
 
 The only requirements are systems with hardware to support modern encryption and decryption, cryptsetup and associated packages, and running in a debian-based environment (ubuntu, mint, popOS, debian etc).
 
-Android / iOS are not supported even if you can run cryptsetup. These distro are severely locked-down so mounting containers in userspace (FUSE) is basically not possible without gaining root access to the device.
+Android / iOS are not supported even if you can run cryptsetup. These distros are severely locked-down so mounting containers in userspace (FUSE) is basically not possible without gaining root access to the device.
 
 # INSTALLATION
 
@@ -44,7 +44,7 @@ Make executable and run:
    **Use only if you know what you are doing and decide if it is worth the risk of keeping a headless LUKS container.**
 
 
-# LUKS Default Parameters:
+# LUKS2 Default Parameters:
 These default settings are completely fine for most users. As already mentioned, password strength is the most important security factor. Encryption parameters only matter when the password is weak!
 - Cipher: aes-xts-plain64
 - Key Size: 512 bits
