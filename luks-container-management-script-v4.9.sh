@@ -468,7 +468,7 @@ error_detach () {
 #############################
 manual_mount_ins() {
 echo -e "\n══════════════════════════════════════════════════════"
-echo -e "${YELLOW}To open and  mount:${NC}"
+echo -e "${YELLOW}To open and mount:${NC}"
 echo -e "  sudo losetup -f --show </path/to/container.bin>"
 echo -e "  sudo cryptsetup luksOpen <loop-device> <alias> \\"
 echo -e "  ${CYAN}--key-file <keyfile>${NC}"
