@@ -1,6 +1,6 @@
 # LUKS Container Management Script
 
-Version 4.9
+Version 5.3
 
 # PURPOSE
 
@@ -16,7 +16,7 @@ Only LUKS container files can be created (.bin). Partitions are **NOT supported*
 
 # SYSTEM REQUIREMENTS
 
-The only requirements are systems with hardware to support modern encryption and decryption, cryptsetup and associated packages, and running in a debian-based environment (ubuntu, mint, popOS, debian etc).
+The only requirements are systems with hardware to support modern encryption and decryption, cryptsetup and associated packages. Arch, Manjaro and Debian-based distros (ubuntu, mint, popOS, debian etc) are supported.
 
 Android / iOS are not supported even if you can run cryptsetup. These distros are severely locked-down so mounting containers in userspace (FUSE) is basically not possible without gaining root access to the device.
 
